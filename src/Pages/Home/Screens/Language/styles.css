@@ -1,0 +1,34 @@
+.LanguageBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+
+.LanguageTitle{
+    font-size: 2.2rem;
+    color: red;
+}
+.LanguageOption1,.LanguageOption2{
+    font-size: 2rem;
+
+    color: rgb(255, 255, 255);
+    border: 10px solid white;
+    
+    border-radius: 10px;
+
+    width: 40%;
+}
+.pointHand1,.pointHand2{
+    width: 10%;
+    position: absolute;
+    left: 14%;
+}
+.pointHand1{
+
+}
