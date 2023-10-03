@@ -1,0 +1,55 @@
+.SpanishMenuTitleMainBox{
+    width: 100%;
+    height: 100%;
+}
+.titleLogo{
+    position: absolute;
+    bottom: 40%;
+    z-index: 1;
+}
+
+.menuButtonsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36%;
+    
+}
+.aboutMyButton,.myExpButton,.mySkillsButton,.contactButton{
+    font-family: 'Pixelify Sans', cursive;
+    color: rgb(255, 255, 255);
+    width: 36%;
+    font-size: 1rem;
+    border: 5px solid;
+    border-radius: 10px;
+    z-index: 3;
+    position: relative;
+    margin-top: 3%;
+    cursor: pointer;
+}
+.aboutMyButton:hover,.myExpButton:hover,.mySkillsButton:hover,.contactButton:hover{
+    color: rgb(255, 167, 182);
+    width: 36.5%;
+}
+
+
+@media (min-width: 1440px ) {
+    .titleLogo{
+        bottom: 34%;
+    }
+    .menuButtonsBox{
+        margin-top: 29%;
+        
+    }
+    .aboutMyButton,.myExpButton,.mySkillsButton,.contactButton{
+        width: 40%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top: 3%;
+    }
+}

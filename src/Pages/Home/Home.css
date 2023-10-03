@@ -41,6 +41,7 @@ body{
     left: 15px;
     text-align: center;
     align-items: center;
+    overflow: hidden;
 
 }
 

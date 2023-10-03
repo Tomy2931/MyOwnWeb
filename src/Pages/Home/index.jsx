@@ -5,6 +5,7 @@ import joystick from './imgs/joystick.png'
 import InsertCoinMain from './Screens/ScreenInsertCoin/index'
 import HandsCoin from './HandsCoin'
 import LanguageScreen from './Screens/Language'
+import SpanishMenuTitle from './Screens/MainTitle/Spanish'
 
 function Home() {
   return (
@@ -24,10 +25,13 @@ function Home() {
         
         <img className='boton_1' src={red_button} alt="" />
         <img className='boton_2 ' src={yellow_button} alt="" />
+
         {/* Screen: */}
+        
         <div className='caja_3 '>
           {/* <InsertCoinMain/> */}
-          <LanguageScreen/>
+          {/* <LanguageScreen/> */}
+          <SpanishMenuTitle/>
         </div>
 
 
