@@ -27,8 +27,44 @@
 .pointHand1,.pointHand2{
     width: 10%;
     position: absolute;
-    left: 14%;
+    left:  16%;
+    animation: pointHandMovement ease-in 1s infinite;
+    display: none;
 }
 .pointHand1{
+    bottom: 40%;
+}
+.pointHand2{
+    bottom: 10%;
+}
+.LanguageOption1:hover,.LanguageOption2:hover{
+    cursor: pointer;
+    color: red;
+    border-color: red;
+}
+.LanguageOption1:hover .pointHand1{display: block;}
+.LanguageOption2:hover .pointHand2{display: block;}
 
+
+
+
+@keyframes pointHandMovement {
+    0%{
+        left: 16%;
+    }
+    50%{
+        left: 20%;
+    }
+    100%{
+        left: 16%;
+    }
+}
+
+@media (min-width: 1440px ) {
+    .pointHand1{
+        bottom: 46%;
+    }
+    .pointHand2{
+        bottom: 23%;
+    }
 }

@@ -5,10 +5,21 @@ function LanguageScreen() {
     return (
         <div className='LanguageBox'>
             <h1 className='LanguageTitle'>Please, select your language: </h1>
-            <h2 className='LanguageOption1'>Spanish</h2>
-            <h2 className='LanguageOption2'>English</h2>
-            <img className='pointHand1' src={pointHand} alt="" />
-            <img className='pointHand2' src={pointHand} alt="" />
+
+            <div className='LanguageOption1'>
+
+                <img className='pointHand1' src={pointHand} alt="" />
+                <h2 >Spanish</h2>
+
+            </div>
+
+            <div className='LanguageOption2'>
+
+                <img className='pointHand2' src={pointHand} alt="" />
+                <h2>English</h2>
+
+            </div>
+
         </div>
          
     )
