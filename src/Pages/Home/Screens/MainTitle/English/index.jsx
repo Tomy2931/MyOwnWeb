@@ -1,28 +1,30 @@
-import './styles.css'
-import pointHand from '../../imgs/pointHand.png'
-
-function LanguageScreen() {
+import '../Spanish/styles.css'
+import titleLogo from '../../../imgs/TitleLogo.jpg'
+function EnglishMenuTitle() {
     return (
-        <div className='LanguageBox'>
-            <h1 className='LanguageTitle'>Please, select a language: </h1>
+        <div className='SpanishMenuTitleMainBox'>
+            <img className='titleLogo' src={titleLogo} alt="" />
+            <div className='menuButtonsBox'>
+                <div className='aboutMyButton'>
+                    <h2>About my</h2>
+                </div>
 
-            <div className='LanguageOption1'>
+                <div className='myExpButton'>
+                    <h2>My experience</h2>
+                </div>
 
-                <img className='pointHand1' src={pointHand} alt="" />
-                <h2 >Spanish</h2>
+                <div className='mySkillsButton'>
+                    <h2>My skills</h2>
+                </div>
 
+                <div className='contactButton'>
+                    <h2>Contact</h2>
+                </div>
             </div>
-
-            <div className='LanguageOption2'>
-
-                <img className='pointHand2' src={pointHand} alt="" />
-                <h2>English</h2>
-
-            </div>
-
         </div>
          
     )
   }
 
-export default LanguageScreen
+export default EnglishMenuTitle
+

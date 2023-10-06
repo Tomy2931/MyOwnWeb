@@ -1,0 +1,81 @@
+.myExperienceMain{
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgb(255, 255, 255);
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden; 
+    align-items: center;
+    
+}
+.myExperienceMain::-webkit-scrollbar{
+    width:0px ;
+}
+
+.progressBox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.progressBar{
+    width: 200px;
+    height: 30px;
+    border: 2px solid red;
+}
+
+
+.achievementsLockedBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    
+}
+.achievementsLocked{
+    width: 100%;
+    height: 5rem;
+    border: 1px solid rgb(0, 255, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+
+.achievementsIcon{
+    width: 20%;
+    height: 70%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.achievementsTextsMain{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    
+}
+
+.achievementsProgressBar{
+    width: 90px;
+    height: 30px;
+    border: 2px solid red;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.achievementsProgressBar_mark{
+    width: 30%;
+    height: 90%;
+
+    border: 1px solid red;
+    background-color: red;
+    margin-left: 2px;
+}

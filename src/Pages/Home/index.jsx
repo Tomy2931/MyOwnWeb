@@ -5,7 +5,12 @@ import joystick from './imgs/joystick.png'
 import InsertCoinMain from './Screens/ScreenInsertCoin/index'
 import HandsCoin from './HandsCoin'
 import LanguageScreen from './Screens/Language'
-import SpanishMenuTitle from './Screens/MainTitle/Spanish'
+import EnglishMenuTitle from './Screens/MainTitle/English'
+import AboutMySpanish from './Screens/MainTitle/Spanish/aboutMySpanish/index'
+import MyExperience from './Screens/MainTitle/Spanish/myExpSpanish/index'
+
+// IMPORTS CON MAYUSCULA AL PRINCIPIO 
+
 
 function Home() {
   return (
@@ -18,7 +23,7 @@ function Home() {
         </div>
 
         <div className='caja_2 rounded-b-md'>
-          <HandsCoin/>
+          {/* <HandsCoin/> */}
           <div className='insert_coin_box'></div>
 
         </div>
@@ -29,9 +34,26 @@ function Home() {
         {/* Screen: */}
         
         <div className='caja_3 '>
-          {/* <InsertCoinMain/> */}
+
+          {/* Pantalla de "Insert Coin" */}
+          {/* <InsertCoinMain/> */} 
+
+          {/* Seleccionar lenguaje */}
           {/* <LanguageScreen/> */}
-          <SpanishMenuTitle/>
+
+          {/* SPANISH */}
+          {/* Menu principal */}
+          {/* <SpanishMenuTitle/> */}
+
+          {/* About My */}
+          {/* <AboutMySpanish/> */}
+          
+          {/* My experience */}
+          <MyExperience />
+
+          {/* <EnglishMenuTitle/> */}
+
+
         </div>
 
 
