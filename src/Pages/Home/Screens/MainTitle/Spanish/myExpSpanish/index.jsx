@@ -4,6 +4,9 @@ import threeCubes from '../../../../imgs/threeCubes.png'
 import graduationIcon from '../../../../imgs/graduationIcon.png'
 import entrevistaIcon from '../../../../imgs/entrevista.png'
 import grassIcon from '../../../../imgs/grass.png'
+import babyIcon from '../../../../imgs/babyIcon.png'
+import JSIcon from '../../../../imgs/JSIcon.png'
+import pythonIcon from '../../../../imgs/pythonIcon.png'
 
 function MyExperience () {
     return(
@@ -102,14 +105,270 @@ function MyExperience () {
                         <div className='achievementsProgressBar'></div>
                     </div>
                 </div>
-            </div>
             
             
             {/* Unlockeds */}
+            <h2 className='mt-5 mb-5  text-lg text-white'>Logros Desbloqueados</h2>
+            {/* 1 */}
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={babyIcon} alt="" />
 
-            <h2 className='mt-10 mb-10  text-lg text-white'>Logros Desbloqueados</h2>
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Primeros pasos</p>
+                        <p className='text-white text-[0.7rem]'>Aprende un lenguaje de </p>
+                        <p className='text-white text-[0.7rem]'>programación </p>
+                    </div>
 
-            <div className='achievementsUnlockedBox'></div>
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                            <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 2 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={JSIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>JavaScript</p>
+                        <p className='text-white text-[0.7rem]'>Aprende el lenguaje de  </p>
+                        <p className='text-white text-[0.7rem]'> programacion JavasCript </p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 3 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Python</p>
+                        <p className='text-white text-[0.7rem]'>Aprende el lenguaje de  </p>
+                        <p className='text-white text-[0.7rem]'> programacion Python </p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 4 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Esqueleto</p>
+                        <p className='text-white text-[0.7rem]'>Aprende a usar el lenguaje  </p>
+                        <p className='text-white text-[0.7rem]'> HTML</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 5 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Piel</p>
+                        <p className='text-white text-[0.7rem]'>Aprende a usar el lenguaje  </p>
+                        <p className='text-white text-[0.7rem]'>CSS</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 6 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Hermandad</p>
+                        <p className='text-white text-[0.7rem]'>Aprende a usar los lenguajes  </p>
+                        <p className='text-white text-[0.7rem]'>HTML y CSS</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>2/2</p>
+                        <div className='achievementsProgressBar flex justify-center gap-[2.5px] '>
+                            <div className='w-[45%] h-[90%] bg-red-600 '></div>
+                            <div className='w-[45%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 7 */}
+            
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Maquetando</p>
+                        <p className='text-white text-[0.7rem]'>Crea 5 proyectos con HTML </p>
+                        <p className='text-white text-[0.7rem]'> y CSS</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>5/5</p>
+                        <div className='achievementsProgressBar flex justify-center gap-[2.5px] '>
+                            <div className='w-[16.5%] h-[90%] bg-red-600 '></div>
+                            <div className='w-[16.5%] h-[90%] bg-red-600 '></div>
+                            <div className='w-[16.5%] h-[90%] bg-red-600 '></div>
+                            <div className='w-[16.5%] h-[90%] bg-red-600 '></div>
+                            <div className='w-[16.5%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 8 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>¡Está vivo!</p>
+                        <p className='text-white text-[0.7rem]'>Implementa Javascript a un </p>
+                        <p className='text-white text-[0.7rem]'>proyecto con HTML y CSS</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 9 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Linkedin</p>
+                        <p className='text-white text-[0.7rem]'>Crea una cuenta en la pagina </p>
+                        <p className='text-white text-[0.7rem]'>de Linkedin</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 10 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>GitHub</p>
+                        <p className='text-white text-[0.7rem]'>Crea una cuenta en la pagina </p>
+                        <p className='text-white text-[0.7rem]'>de GitHub</p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 11 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>ReactJS</p>
+                        <p className='text-white text-[0.7rem]'>Aprende a usar la libreria de  </p>
+                        <p className='text-white text-[0.7rem]'>de JavaScript: ReactJS </p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 12 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>ReactJS</p>
+                        <p className='text-white text-[0.7rem]'>Aprende a usar la libreria de  </p>
+                        <p className='text-white text-[0.7rem]'>de JavaScript: ReactJS </p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+            {/* 13 */}
+
+            <div className='achievementsLocked'>
+                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+
+                    <div className='achievementsTextsMain'>
+                        <p className='text-white text-lg'>Por fin...</p>
+                        <p className='text-white text-[0.7rem]'>Centra un div  </p>
+                        <p className='text-white text-[0.7rem]'>ㅤㅤㅤㅤㅤ </p>
+                    </div>
+
+                    <div className='achievementsProgressBarMain'>
+                        <p className='text-white'>1/1</p>
+                        <div className='achievementsProgressBar flex justify-center'>
+                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+
+
+
+
+            </div>
+
+
         </div>
     )
 }
