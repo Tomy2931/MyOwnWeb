@@ -7,15 +7,27 @@ import grassIcon from '../../../../imgs/grass.png'
 import babyIcon from '../../../../imgs/babyIcon.png'
 import JSIcon from '../../../../imgs/JSIcon.png'
 import pythonIcon from '../../../../imgs/pythonIcon.png'
+import htmlIcon from '../../../../imgs/htmlIcon.png'
+import cssIcon from '../../../../imgs/cssIcon.png'
+import handshakeIcon from '../../../../imgs/handshakeIcon.png'
+import maquetandoIcon from '../../../../imgs/maquetandoIcon.png'
+import aliveIcon from '../../../../imgs/aliveIcon.png'
+import socialIcon from '../../../../imgs/socialIcon.png'
+import catIcon from '../../../../imgs/catIcon.png'
+import reactIcon from '../../../../imgs/reactIcon.png'
+import tiredIcon from '../../../../imgs/tiredIcon.png'
 
 function MyExperience () {
     return(
         <div className='myExperienceMain'>
             <div className='progressBox'>
                 <h2 className='text-red-500 text-lg'>Mi progreso</h2>
-                <div className='progressBar'></div>
-                <h2>3%</h2>
+                <div className='progressBar flex justify-left'>
+                    <div className='w-[70%] h-[90%] bg-red-600 mt-[1.5px] ml-[1.5px] '></div>
+                </div>
+                <h2 className='text-red-500 text-lg'>70%</h2>
             </div>
+
             <h2 className='mt-10 mb-10 text-lg text-white'>Logros Bloqueados</h2>
 
             {/* 1 */}
@@ -151,7 +163,7 @@ function MyExperience () {
             <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={pythonIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain mr-5'>
                         <p className='text-white text-lg'>Python</p>
                         <p className='text-white text-[0.7rem]'>Aprende el lenguaje de  </p>
                         <p className='text-white text-[0.7rem]'> programacion Python </p>
@@ -168,7 +180,7 @@ function MyExperience () {
             {/* 4 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={htmlIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>Esqueleto</p>
@@ -187,7 +199,7 @@ function MyExperience () {
             {/* 5 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={cssIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>Piel</p>
@@ -206,7 +218,7 @@ function MyExperience () {
             {/* 6 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={handshakeIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>Hermandad</p>
@@ -226,7 +238,7 @@ function MyExperience () {
             {/* 7 */}
             
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={maquetandoIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>Maquetando</p>
@@ -249,7 +261,7 @@ function MyExperience () {
             {/* 8 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={aliveIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>¡Está vivo!</p>
@@ -268,7 +280,7 @@ function MyExperience () {
             {/* 9 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={socialIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>Linkedin</p>
@@ -287,7 +299,7 @@ function MyExperience () {
             {/* 10 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={catIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>GitHub</p>
@@ -306,7 +318,7 @@ function MyExperience () {
             {/* 11 */}
 
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={reactIcon} alt="" />
 
                     <div className='achievementsTextsMain'>
                         <p className='text-white text-lg'>ReactJS</p>
@@ -324,32 +336,13 @@ function MyExperience () {
 
             {/* 12 */}
 
+            
             <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
+                    <img className='achievementsIcon' src={tiredIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
-                        <p className='text-white text-lg'>ReactJS</p>
-                        <p className='text-white text-[0.7rem]'>Aprende a usar la libreria de  </p>
-                        <p className='text-white text-[0.7rem]'>de JavaScript: ReactJS </p>
-                    </div>
-
-                    <div className='achievementsProgressBarMain'>
-                        <p className='text-white'>1/1</p>
-                        <div className='achievementsProgressBar flex justify-center'>
-                        <div className='w-[95%] h-[90%] bg-red-600 '></div>
-                        </div>
-                    </div>
-            </div>
-
-            {/* 13 */}
-
-            <div className='achievementsLocked'>
-                    <img className='achievementsIcon' src={pythonIcon} alt="" />
-
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain mr-20'>
                         <p className='text-white text-lg'>Por fin...</p>
-                        <p className='text-white text-[0.7rem]'>Centra un div  </p>
-                        <p className='text-white text-[0.7rem]'>ㅤㅤㅤㅤㅤ </p>
+                        <p className='text-white text-[0.7rem]'>Centra un div </p>
                     </div>
 
                     <div className='achievementsProgressBarMain'>
@@ -360,12 +353,7 @@ function MyExperience () {
                     </div>
             </div>
 
-
-
-
-
-
-
+           
             </div>
 
 

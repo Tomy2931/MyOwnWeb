@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    margin-bottom: 10px;
 }
 
 
@@ -78,4 +78,14 @@
     border: 1px solid red;
     background-color: red;
     margin-left: 2px;
+}
+
+@media (min-width: 1440px ) {
+    .achievementsLocked{
+        height: 6rem;
+       
+    }
+    .achievementsIcon{
+        height: 85%;
+    }
 }
