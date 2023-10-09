@@ -35,9 +35,10 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={maletaIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain ml-5'>
                         <p className='text-white text-lg'>A trabajar</p>
-                        <p className='text-white text-[0.7rem]'>Consigue tu primer trabajo </p>
+                        <p className='text-white text-[0.7rem]'>Consigue tu primer trabajo como</p>
+                        <p className='text-white text-[0.7rem]'>programador</p>
                     </div>
 
                     <div className='achievementsProgressBarMain'>
@@ -50,7 +51,7 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={threeCubes} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain mr-6'>
                         <p className='text-white text-lg'>Trilingüe</p>
                         <p className='text-white text-[0.7rem]'>Aprendede 3 lenguajes de </p>
                         <p className='text-white text-[0.7rem]'>programación</p>
@@ -70,7 +71,7 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={graduationIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain mr-6'>
                         <p className='text-white text-lg'>Ultima vuelta</p>
                         <p className='text-white text-[0.7rem]'>Termina la carrera de la </p>
                         <p className='text-white text-[0.7rem]'>facultad</p>
@@ -90,7 +91,7 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={entrevistaIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain mr-1'>
                         <p className='text-white text-lg'>CV</p>
                         <p className='text-white text-[0.7rem]'>Ten tu primera entrevista </p>
                         <p className='text-white text-[0.7rem]'>laboral</p>
@@ -107,7 +108,7 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={grassIcon} alt="" />
 
-                    <div className='achievementsTextsMain'>
+                    <div className='achievementsTextsMain ml-5'>
                         <p className='text-white text-lg'>Levantate</p>
                         <p className='text-white text-[0.7rem]'>Sal de tu casa y toca el pasto </p>
                     </div>

@@ -2,12 +2,14 @@ import './Home.css'
 import red_button from './imgs/red_button.png'
 import yellow_button from './imgs/yellow_button.png'
 import joystick from './imgs/joystick.png'
-import InsertCoinMain from './Screens/ScreenInsertCoin/index'
 import HandsCoin from './HandsCoin'
+import InsertCoinMain from './Screens/ScreenInsertCoin/index'
+import SpanishMenuTitle from './Screens/MainTitle/Spanish/index'
 import LanguageScreen from './Screens/Language'
 import EnglishMenuTitle from './Screens/MainTitle/English'
 import AboutMySpanish from './Screens/MainTitle/Spanish/aboutMySpanish/index'
 import MyExperience from './Screens/MainTitle/Spanish/myExpSpanish/index'
+import MySkills from './Screens/MainTitle/Spanish/mySkillsSpanish/index'
 
 // IMPORTS CON MAYUSCULA AL PRINCIPIO 
 
@@ -36,12 +38,13 @@ function Home() {
         <div className='caja_3 '>
 
           {/* Pantalla de "Insert Coin" */}
-          {/* <InsertCoinMain/> */} 
+          {/* <InsertCoinMain/>  */}
 
           {/* Seleccionar lenguaje */}
           {/* <LanguageScreen/> */}
 
           {/* SPANISH */}
+
           {/* Menu principal */}
           {/* <SpanishMenuTitle/> */}
 
@@ -49,8 +52,14 @@ function Home() {
           {/* <AboutMySpanish/> */}
           
           {/* My experience */}
-          <MyExperience />
+          {/* <MyExperience /> */}
 
+          {/* My skills */}
+          <MySkills/>
+
+          {/* ENGLISH */}
+
+          {/* <EnglishMenuTitle/> */}
           {/* <EnglishMenuTitle/> */}
 
 

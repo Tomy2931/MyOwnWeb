@@ -6,8 +6,19 @@ function mySkills() {
             <img className='titleLogo' src={titleLogo} alt="" />
             <div className='menuButtonsBox'>
                 <div className='aboutMyButton'>
-                    <h2>HOLAAAAAAAAAAAAAAAA</h2>
-                
+                    <h2>Sobre mí</h2>
+                </div>
+
+                <div className='myExpButton'>
+                    <h2>Mi experiencia</h2>
+                </div>
+
+                <div className='mySkillsButton'>
+                    <h2>Mis habilidades</h2>
+                </div>
+
+                <div className='contactButton'>
+                    <h2>Contacto</h2>
                 </div>
             </div>
         </div>
