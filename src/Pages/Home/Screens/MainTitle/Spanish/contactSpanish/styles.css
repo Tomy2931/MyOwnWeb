@@ -1,0 +1,49 @@
+.contactMain{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../imgs/wallpaperPhone.png');
+    background-size:cover;
+    background-position: 35%;
+    background-color: rgba(0, 0, 0, 0.371);
+    background-blend-mode: multiply;
+
+    border: 5px solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Telefono: */
+.phoneBox{
+    margin-left: 20%;
+    width: 65%;
+    height: 85%;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px 0 black;
+    position: relative;
+    
+}
+.phoneHandle{
+    margin-top: 10%;
+    margin-left: 2%;
+    width: 25%;
+    height: 80%;
+    border-radius: 15px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(5, 5, 5);
+    box-shadow:5px 5px 0 0;
+    position: absolute;
+}
+
+.phoneButtonBox{
+    width: 60%;
+    height: 70%;
+    margin-top: 20%;
+    margin-left: 33% ;
+    background-color: rgb(143, 143, 143);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.562);
+    box-shadow:5px 5px 0 0;
+}
