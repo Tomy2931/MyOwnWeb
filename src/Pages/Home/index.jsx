@@ -10,6 +10,7 @@ import EnglishMenuTitle from './Screens/MainTitle/English'
 import AboutMySpanish from './Screens/MainTitle/Spanish/aboutMySpanish/index'
 import MyExperience from './Screens/MainTitle/Spanish/myExpSpanish/index'
 import MySkills from './Screens/MainTitle/Spanish/mySkillsSpanish/index'
+import Contact from './Screens/MainTitle/Spanish/contactSpanish/index'
 
 // IMPORTS CON MAYUSCULA AL PRINCIPIO 
 
@@ -55,7 +56,10 @@ function Home() {
           {/* <MyExperience /> */}
 
           {/* My skills */}
-          <MySkills/>
+          {/* <MySkills/> */}
+
+          {/* Contact */}
+          <Contact/>
 
           {/* ENGLISH */}
 

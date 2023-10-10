@@ -35,10 +35,10 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                     <img className='achievementsIcon' src={maletaIcon} alt="" />
 
-                    <div className='achievementsTextsMain ml-5'>
+                    <div className='achievementsTextsMain '>
                         <p className='text-white text-lg'>A trabajar</p>
-                        <p className='text-white text-[0.7rem]'>Consigue tu primer trabajo como</p>
-                        <p className='text-white text-[0.7rem]'>programador</p>
+                        <p className='text-white text-[0.7rem]'>Consigue tu primer trabajo </p>
+                        <p className='text-white text-[0.7rem]'>como programador</p>
                     </div>
 
                     <div className='achievementsProgressBarMain'>

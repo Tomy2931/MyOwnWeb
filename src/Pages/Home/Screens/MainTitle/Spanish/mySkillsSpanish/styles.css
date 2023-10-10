@@ -8,6 +8,9 @@
     
 }
 
+.inventoryGeneralDetail{
+    align-items: center;
+}
 .mySkillsBox{
     width: 90%;
     height: 80%;
@@ -17,18 +20,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: orange;
 }
 .inventoryTitle{
     position: absolute;
     top: 1.8%;
     left: 12%;
     width: 10rem;
-    color: rgb(240, 240, 240);
+    color: rgb(2, 2, 2);
     border: rgb(255, 136, 0) solid 5px;
-    border-bottom: 5px solid black;
+    background-color: orange;
+    border-bottom: 5px solid orange;
     border-radius: 0px 0px ;
     z-index: 2;
-
+    font-weight:lighter;
+    
 }
 
 
@@ -55,9 +61,14 @@
     border: 2px solid rgb(255, 136, 0);
 }
 
+@media (min-width: 1440px ) {
+        .inventoryTitle{ top: 3.5%;}
+        .inventorySpaceContainer{
+            grid-template-columns: repeat(4, 100px ); 
+            grid-template-rows: repeat(3, 100px); 
+            grid-gap: 10px;    
+        }
+       
+    }
 
-/* top: 3.5%; */
 
-/* grid-template-columns: repeat(4, 100px ); 
-    grid-template-rows: repeat(3, 100px); /* Altura de las filas */
-    /* grid-gap: 10px;   */
