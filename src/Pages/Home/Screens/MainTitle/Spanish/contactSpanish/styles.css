@@ -16,6 +16,26 @@
     align-items: center;
 }
 
+.phoneBook:hover{
+    animation: phoneBookMovement 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.phoneBook:active{
+    animation: phoneBookMovement 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* Book from numbers*/
+.openBook{
+    width: 85%;
+    z-index: 2;
+}
+
+.cruzIcon:hover{
+    transform: scale(1.2);
+}
+
 /* Telefono: */
 .phoneBox{
     margin-left: 20%;
@@ -69,4 +89,51 @@
     border-radius: 15px;
     border: 2px solid rgba(0, 0, 0, 0.562);
     box-shadow:5px 5px 0 0;
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 40px ); 
+    grid-template-rows: repeat(4, 40px); 
+    grid-gap: 5px;  
+}
+.buttonNumber{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(81, 81, 81);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow:2px 2px 0 0;
+    
+}
+.buttonNumber:active{
+    transform: scale(0.90);
+}
+
+@keyframes phoneBookMovement{
+    0%{
+        rotate: 0deg
+        
+    }
+    25%{
+        rotate: 15deg
+    }
+    50%{
+        rotate: 0deg
+    }
+    75%{
+        rotate: 15deg
+    }
+    100%{
+        rotate: 0deg
+    }
+}
+
+@media (min-width: 1440px ) {
+    .phoneButtonBox{
+        grid-template-columns: repeat(3, 55px ); 
+        grid-template-rows: repeat(4, 55px);  
+    }
 }
