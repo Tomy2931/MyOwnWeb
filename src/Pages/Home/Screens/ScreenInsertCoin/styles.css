@@ -13,10 +13,11 @@
     align-items: center;
     justify-content: center;
     
-
+    padding-top: 25%;
 
     animation: inster_coin_animation 0.6s infinite ease, disapear_text 1s infinite;
     
+
 }
 
 
