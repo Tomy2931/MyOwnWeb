@@ -34,12 +34,26 @@ function Home() {
         </div>
 
         <div className='caja_2 rounded-b-md '>
-          <div className='insert_coin_box' onClick={context.coinInsert}></div>
+          <div className='insert_coin_box' 
+          onClick={(event) =>{
+            context.coinInsert(event);
+            context.addCoin(event);
+          }
+         
+          }
+          
+          ></div>
 
         </div>
         
-        <img className='boton_1 ' onClick={context.redButton} src={red_button} alt="" />
-        <img className='boton_2' onClick={()=> context.setLanguageSelected('1')} src={yellow_button} alt="" />
+        <img className='boton_1 ' src={red_button} alt="" />
+        <img className='boton_2' onClick={()=> {
+          if (context.languageSelected !== undefined){
+            context.setLanguageSelected('1')
+          }
+
+        }} 
+        src={yellow_button} alt="" />
 
         {/* Screen: */}
         

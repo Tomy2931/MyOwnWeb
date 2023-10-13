@@ -22,7 +22,7 @@ function mySkills() {
             <main className={`w-[100%] h-[100%]  ${(context.languageSelected == '5' ?  'onScreenStyle' : 'offScreenStyle')}`}>
                     <div className='mySkillsMain'>
                     <div className='inventoryGeneralDetail absolute top-0 right-5 flex '>
-                        <p className='inventoryCoinCount text-white font-bold text-xl'>0</p>
+                        <p className='inventoryCoinCount text-white font-bold text-xl'>{context.coinCount}</p>
                         <img className='w-10' src={coin} alt="" />
                     </div>
             

@@ -6,29 +6,54 @@
     flex-direction: column;
     align-items: center;
 }
-
-.aboutMySpanishMain_header{
-    display: flex;
-    justify-content: space-between;
+.tomySection{
     width: 100%;
-    gap: 16%;
+    height: 55%;
+    display: flex ;
+    align-items: center;
 }
 .photo8Bits{
     width: 50%;
     height: 90%;
-}
-.aboutMyTitle{
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    margin-top: 3rem ;
-    margin-right: 15%;
-    text-decoration: underline 2px ;
-
     
 }
+
+.textBubbleeBox{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    
+}
+
+.dialogueName{
+    font-size:1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+.dialogueText{
+    position: absolute;
+    font-size:0.88rem;
+    top: 30%;
+    left: 8%;
+    text-align: left;
+    white-space: nowrap;
+    
+    width: 12ch;
+
+    overflow:hidden;
+
+    animation: typing 1s steps(17), blink .5s infinite step-end alternate;
+
+}
+
+
+ /*Player section */
+
 .textBox{
     width: 97%;
-    height: 45%;
+    height: 42%;
     border: 2px solid white; 
     border-radius: 10px;
     margin-bottom: 10px;
@@ -36,9 +61,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0; 
 }
-.textBox_content{
+.textBox::-webkit-scrollbar{
+    width:0px ;
+}
+.textBox_questions{
     color: rgb(255, 255, 255);
     padding: 0 10px 0 10px;
     text-align: left;
@@ -48,8 +79,7 @@
     white-space: nowrap;
     width: 100%;
    
-    animation: typing 2s steps(40), blink .5s infinite step-end alternate;
-    overflow:hidden;
+    
 }
 
 @keyframes typing {
@@ -66,4 +96,19 @@
     .textBox_content{
         font-size:1.3rem;
     }
+    .aboutMyTitle{
+        font-size: 2rem;
+        margin-top: 20% ;
+        margin-right: 17%; 
     }
+    .dialogueName{
+        font-size:2rem;
+        top: 10%;
+        left: 6%;
+    }
+    .dialogueText{
+        font-size:1.5rem;
+        top: 40%;
+        left: 8%;
+    }
+}

@@ -18,39 +18,31 @@ export const ArcadeProvider = ({children}) => {
     //Lenguaje seleccionado 
     const [languageSelected,setLanguageSelected] = useState()
 
+    //Pantalla Inventario
+    const [coinCount,setCoinCount] = useState(0)
+    const addCoin = () => {
+      setCoinCount(coinCount+1)
+    }
+
     //Pantalla Contacto
     const [isBookOpen,setIsBookOpen] = useState(false)
     const openBook = ()=> setIsBookOpen(true)
     const closeBook = ()=> setIsBookOpen(false)
-    
 
-
-
-
-       
-    //Presionar boton
-    const [pressButton, setPressButton] = useState(false)
-
-    const [onScreen, setOnScreen] = React.useState(false);
-
-    const orangeButton = () => {console.log("Boton naranja");}
-    const redButton = () => {console.log("Boton rojo");}
     return (
         <ArcadeContext.Provider value={{
         coinScreen,
         setCoinScreen,
         coinInsert,
-        pressButton, 
-        setPressButton,
-        onScreen,
-        orangeButton,
-        redButton,
         languageSelected,
         setLanguageSelected,
         isBookOpen,
         setIsBookOpen,
         openBook,
         closeBook,
+        coinCount,
+        setCoinCount,
+        addCoin,
         
 
     
