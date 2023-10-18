@@ -18,11 +18,27 @@ export const ArcadeProvider = ({children}) => {
     //Lenguaje seleccionado 
     const [languageSelected,setLanguageSelected] = useState()
 
+    //Pantalla About My
+
+    const [questionNumber, setQuestionNumber] = useState(0)
+    const answersList = ["Mi nombre es Tomas Cejas, pero me gusta que me digan Tomy"]
+
+
     //Pantalla Inventario
     const [coinCount,setCoinCount] = useState(0)
     const addCoin = () => {
       setCoinCount(coinCount+1)
     }
+
+    const [selectedItemDetail,setSelectedItemDetail] = useState()
+    
+    const [isItemDetailOpen,setIsItemDetailOpen] = useState(false)
+    const clickItem = () => setIsItemDetailOpen(true)
+
+    const clickClose = () => {setIsItemDetailOpen(false)}
+
+    
+  
 
     //Pantalla Contacto
     const [isBookOpen,setIsBookOpen] = useState(false)
@@ -43,6 +59,14 @@ export const ArcadeProvider = ({children}) => {
         coinCount,
         setCoinCount,
         addCoin,
+        questionNumber, 
+        setQuestionNumber,
+        selectedItemDetail,
+        setSelectedItemDetail,
+        isItemDetailOpen,
+        setIsItemDetailOpen,
+        clickItem,
+        clickClose,
         
 
     

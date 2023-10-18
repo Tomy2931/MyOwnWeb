@@ -17,7 +17,8 @@ function AboutMySpanish() {
           <div className='textBubbleeBox relative '>
             <img className='w-[100%]  top-1 left-0'  src={dialogue} alt="" />
             <p className='dialogueName'> ???</p>
-            <p className='dialogueText'> Hola, ¿qué tal? </p>
+            <p className='dialogueText'> Lorem</p>
+            {/* <p className='dialogueText'> gusta que me digan Tomy </p> */}
 
           </div>
         </div>
@@ -25,12 +26,12 @@ function AboutMySpanish() {
 
           <div className='textBox'>
 
-            <p className='textBox_questions'>1. ¿Cuál es tu nombre? </p>
-            <p className='textBox_questions'>2. ¿Cual es tu edad? </p>
-            <p className='textBox_questions'>3. ¿De dónde sos?</p>
-            <p className='textBox_questions'>4. ¿A qué te dedicas?</p>
-            <p className='textBox_questions'>5. ¿Cúal es tu experiencia?  </p>
-            <p className='textBox_questions'>6. ¿Qué te gusta hacer?  </p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('1')}>1. ¿Cuál es tu nombre? </p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('2')}>2. ¿Cual es tu edad? </p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('3')}>3. ¿De dónde sos?</p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('4')}>4. ¿A qué te dedicas?</p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('5')}>5. ¿Cúal es tu experiencia?  </p>
+            <p className='textBox_questions' onClick={context.setQuestionNumber('6')}>6. ¿Qué te gusta hacer?  </p>
                   
           </div>
         </div>
