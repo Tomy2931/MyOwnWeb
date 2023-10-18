@@ -90,6 +90,7 @@
     align-items: start;
     width: 55%;
 }
+.closeIcon{ width: 15%;}
 .closeIcon:hover{transform: scale(1.1);}
 
 
@@ -100,7 +101,9 @@
             grid-template-rows: repeat(3, 100px); 
             grid-gap: 10px;    
         }
-       
+       .closeIcon{
+        width: 10%;
+       }
     }
 
 

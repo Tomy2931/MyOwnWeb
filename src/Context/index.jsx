@@ -30,7 +30,7 @@ export const ArcadeProvider = ({children}) => {
       setCoinCount(coinCount+1)
     }
 
-    const [selectedItemDetail,setSelectedItemDetail] = useState()
+    const [selectedItemDetail,setSelectedItemDetail] = useState(0)
     
     const [isItemDetailOpen,setIsItemDetailOpen] = useState(false)
     const clickItem = () => setIsItemDetailOpen(true)

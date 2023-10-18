@@ -20,8 +20,24 @@ import { ArcadeContext } from '../../../../../../Context'
 function mySkills() {
     const context = useContext(ArcadeContext)
     const imgList = [htmlIcon,cssIcon,JSIcon,reactIcon,tailwindIcon,pythonIcon,potion,apple,sword,cheese,dice,control]
+    const itemsDetails = [
+    {icon:htmlIcon, name: "HTML", desc: "Lenguaje de marcado para la elaboración de páginas web.", type: "Lenguaje"  },
+    {icon:cssIcon, name: "CSS", desc: "Lenguaje de programación utilizado para definir y controlar la presentación y el diseño de páginas web.", type: "Lenguaje"  },
+    {icon:JSIcon, name: "JavaScript", desc: "Llenguaje de programación utilizado en el desarrollo web que permite agregar interactividad y funcionalidad a sitios web.", type: "Lenguaje"  },
+    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de JavaScript de código abierto,utilizada para construir interfaces de usuario interactivas y reactivas en aplicaciones web.", type: "Librería"  },
+    {icon:tailwindIcon, name: "Tailwdind CSS", desc: "Clases CSS predefinidas que se pueden aplicar directamente a elementos HTML para estilizar y diseñar componentes de manera rápida y eficiente.  HTML", type: "Framework"  },
+    {icon:pythonIcon, name: "Python", desc: "Lenguaje de programación utilizado en diversas aplicaciones, desde desarrollo web hasta análisis de datos y automatización de tareas. ", type: "Lenguaje"  },
+    {icon:potion, name: "Poción", desc: "Una rara poción, no sé que hace...", type: "Consumible"  },
+    {icon:apple, name: "Manzana", desc: "Una simple manzana.", type: "Consumible"  },
+    {icon:sword, name: "Espada", desc: "Una espada de madera.", type: "Arma"  },
+    {icon:cheese, name: "Queso", desc: "Un rico queso, no sé como terminó en mi mochila.", type: "Consumible"  },
+    {icon:dice, name: "Dado", desc: "Un bonito dado para jugar el azar", type: "Objeto"  },
+    {icon:control, name: "???", desc: "No tengo idea que es esto.", type: "Raro"  },
+
+]
     const i = context.selectedItemDetail
     const src = imgList[i]
+    const detailValue = itemsDetails[i].icon
    
     return (
             <main className={`w-[100%] h-[100%]  ${(context.languageSelected == '5' ?  'onScreenStyle' : 'offScreenStyle')}  ${(context.isItemDetailOpen == true ?  'offScreenStyle' : 'onScreenStyle')}} `}>
@@ -121,22 +137,22 @@ function mySkills() {
 
                             <div className='itemDetail'>
 
-                                <img  className='w-[40%] h-[75%] border-4 border-red-200 rounded-lg bg-slate-950 ml-1 ' src={src} alt="Imagen" />
-                                <img  className='closeIcon w-[15%] h-[25%] absolute right-0 top-0 cursor-pointer' onClick={context.clickClose} src={cruzIcon} alt="icono de cerrar" />
+                                <img  className='w-[40%] h-[75%] border-4 border-red-200 rounded-lg bg-slate-950 ml-1 p-2 ' src={detailValue} alt="Imagen" />
+                                <img  className='closeIcon absolute right-0 top-0 cursor-pointer' onClick={context.clickClose} src={cruzIcon} alt="icono de cerrar" />
 
                                 <div className='textInfoBox ml-2'>
 
-                                    <h1 className='text-[2.5rem]'>Nombre</h1>
+                                    <h1 className='text-[2rem] underline'>{itemsDetails[i].name}</h1>
 
                                     <div className='w-[100%] h-[30%] bg-red-400 rounded-md'>
-                                        <h2 className='text-left ml-1'>Esto es una espada xd lol omg</h2>
+                                        <h2 className='text-left ml-1'> {itemsDetails[i].desc} </h2>
 
                                     </div>
 
                                     <div className='typeItem flex bg-green-400 mt-1 rounded-lg'>
 
-                                        <h2>Tipo:</h2> 
-                                        <h2>Comida</h2>
+                                        <h2 className='ml-1'  >Tipo:</h2> 
+                                        <h2 className='ml-1 mr-2'>{itemsDetails[i].type}</h2>
 
                                     </div>
                                 </div>
