@@ -24,8 +24,8 @@ function mySkills() {
     {icon:htmlIcon, name: "HTML", desc: "Lenguaje de marcado para la elaboración de páginas web.", type: "Lenguaje"  },
     {icon:cssIcon, name: "CSS", desc: "Lenguaje de programación utilizado para definir y controlar la presentación y el diseño de páginas web.", type: "Lenguaje"  },
     {icon:JSIcon, name: "JavaScript", desc: "Llenguaje de programación utilizado en el desarrollo web que permite agregar interactividad y funcionalidad a sitios web.", type: "Lenguaje"  },
-    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de JavaScript de código abierto,utilizada para construir interfaces de usuario interactivas y reactivas en aplicaciones web.", type: "Librería"  },
-    {icon:tailwindIcon, name: "Tailwdind CSS", desc: "Clases CSS predefinidas que se pueden aplicar directamente a elementos HTML para estilizar y diseñar componentes de manera rápida y eficiente.  HTML", type: "Framework"  },
+    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de Java Script,utilizada para construir interfaces de usuario interactivas y reactivas en aplicaciones web.", type: "Librería"  },
+    {icon:tailwindIcon, name: "Tailwdind", desc: "Permite a los desarrolladores y diseñadores aplicar estilos a los sitios web de una manera ágil y optimizada.", type: "Framework"  },
     {icon:pythonIcon, name: "Python", desc: "Lenguaje de programación utilizado en diversas aplicaciones, desde desarrollo web hasta análisis de datos y automatización de tareas. ", type: "Lenguaje"  },
     {icon:potion, name: "Poción", desc: "Una rara poción, no sé que hace...", type: "Consumible"  },
     {icon:apple, name: "Manzana", desc: "Una simple manzana.", type: "Consumible"  },
@@ -137,22 +137,22 @@ function mySkills() {
 
                             <div className='itemDetail'>
 
-                                <img  className='w-[40%] h-[75%] border-4 border-red-200 rounded-lg bg-slate-950 ml-1 p-2 ' src={detailValue} alt="Imagen" />
+                                <img  className='itemDetailImage border-4 border-red-200 rounded-lg bg-slate-950 ml-1 p-2 ' src={detailValue} alt="Imagen" />
                                 <img  className='closeIcon absolute right-0 top-0 cursor-pointer' onClick={context.clickClose} src={cruzIcon} alt="icono de cerrar" />
 
                                 <div className='textInfoBox ml-2'>
 
                                     <h1 className='text-[2rem] underline'>{itemsDetails[i].name}</h1>
 
-                                    <div className='w-[100%] h-[30%] bg-red-400 rounded-md'>
-                                        <h2 className='text-left ml-1'> {itemsDetails[i].desc} </h2>
+                                    <div className='w-[100%] h-[30%]  bg-red-400 rounded-md'>
+                                        <h2 className='text-left ml-1 text-[0.9rem] '> {itemsDetails[i].desc} </h2>
 
                                     </div>
 
-                                    <div className='typeItem flex bg-green-400 mt-1 rounded-lg'>
+                                    <div className='typeItem flex  bg-green-400 mt-1 rounded-lg text-[0.9rem] '>
 
                                         <h2 className='ml-1'  >Tipo:</h2> 
-                                        <h2 className='ml-1 mr-2'>{itemsDetails[i].type}</h2>
+                                        <h2 className='ml-1 mr-2 font-semibold'>{itemsDetails[i].type}</h2>
 
                                     </div>
                                 </div>

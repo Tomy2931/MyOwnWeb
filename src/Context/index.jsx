@@ -44,6 +44,29 @@ export const ArcadeProvider = ({children}) => {
     const [isBookOpen,setIsBookOpen] = useState(false)
     const openBook = ()=> setIsBookOpen(true)
     const closeBook = ()=> setIsBookOpen(false)
+    
+    const [numberPressed,setNumberPressed] = useState("")
+    const [bubbleTextPhone,setbubbleTextPhone] = useState(false)
+    
+    function buttonPress (num) {
+      
+      if (numberPressed.length < 4) {
+          setNumberPressed(prevNumberPressed => prevNumberPressed + num)
+      }
+    }
+   
+      if (numberPressed.length == 4) {
+        setTimeout(() => {
+          setbubbleTextPhone(true)
+        }, 1400);
+      }
+    
+      const closeBubbleTextPhone = () => {
+        setbubbleTextPhone(false)
+        setNumberPressed("")
+      }
+
+   
 
     return (
         <ArcadeContext.Provider value={{
@@ -67,7 +90,12 @@ export const ArcadeProvider = ({children}) => {
         setIsItemDetailOpen,
         clickItem,
         clickClose,
-        
+        numberPressed,
+        setNumberPressed,
+        buttonPress,
+        bubbleTextPhone,
+        setbubbleTextPhone,
+        closeBubbleTextPhone,
 
     
         }}>

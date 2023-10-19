@@ -77,8 +77,9 @@
 .numberScreenCont{
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Silkscreen', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: rgb(0, 31, 0);
+    animation: numbersScreenAnimation 0.98s  infinite ;
 }
 .phoneButtonBox{
     width: 60%;
@@ -106,11 +107,54 @@
     border-radius: 10px;
     border: 1px solid black;
     box-shadow:2px 2px 0 0;
-    
+    cursor: pointer;
 }
 .buttonNumber:active{
     transform: scale(0.90);
 }
+
+/*Globo texto negro*/
+.bubbleTextPhone{
+    opacity: 0.99;
+    display: flex;
+    align-items: center;
+    
+    background-color: rgb(1, 1, 16);
+
+}
+.phoneGuyIcon{
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+}
+.phoneGuyText{
+    text-align: left;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    width: 60%;
+    height: 20%;
+    
+    overflow:hidden;
+
+    animation: typing 1s steps(17), blink .5s infinite step-end alternate;
+    user-select: all;
+}
+.Xclose:hover{
+    scale: 1.2;
+    cursor: pointer;
+    color: red;
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes blink {
+
+    50% { border-color: transparent}
+    
+   }
+
 
 @keyframes phoneBookMovement{
     0%{
@@ -129,6 +173,15 @@
     100%{
         rotate: 0deg
     }
+}
+@keyframes numbersScreenAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 @media (min-width: 1440px ) {
