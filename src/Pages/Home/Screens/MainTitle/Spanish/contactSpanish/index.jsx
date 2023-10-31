@@ -15,6 +15,8 @@ const phoneNumbersInfo = [
   {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años"},
 ]
 
+
+
 function contact() {
   const context = useContext(ArcadeContext)
     return (
@@ -37,7 +39,7 @@ function contact() {
 
                         <h1 className='text-white ml-2 absolute text-2xl top-4 left-[28%]'>???:</h1>
                             
-                              <h2 className='phoneGuyText text-white ml-1 text-xs'> no rompas las bolas flaco</h2>
+                              <h2 className='phoneGuyText text-white ml-1 text-xs'> {phoneNumbersInfo[context.numberInfo].info} </h2>
                           
                         </div>
                       <div>

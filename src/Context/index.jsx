@@ -45,8 +45,9 @@ export const ArcadeProvider = ({children}) => {
     const openBook = ()=> setIsBookOpen(true)
     const closeBook = ()=> setIsBookOpen(false)
     
-    const [numberPressed,setNumberPressed] = useState("")
-    const [bubbleTextPhone,setbubbleTextPhone] = useState(false)
+    const [numberPressed,setNumberPressed] = useState("") //Botones en pantalla
+    const [bubbleTextPhone,setbubbleTextPhone] = useState(false) //Aparicion de globo de texto
+    const [numberInfo,setNumberInfo] = useState(0) //Aparicion de globo de texto
     
     function buttonPress (num) {
       
@@ -59,6 +60,7 @@ export const ArcadeProvider = ({children}) => {
         setTimeout(() => {
           setbubbleTextPhone(true)
         }, 1400);
+
       }
     
       const closeBubbleTextPhone = () => {
@@ -96,6 +98,8 @@ export const ArcadeProvider = ({children}) => {
         bubbleTextPhone,
         setbubbleTextPhone,
         closeBubbleTextPhone,
+        numberInfo,
+        setNumberInfo,
 
     
         }}>
