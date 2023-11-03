@@ -10,16 +10,23 @@ import AboutMySpanish from './Screens/MainTitle/Spanish/aboutMySpanish/index'
 import MyExperience from './Screens/MainTitle/Spanish/myExpSpanish/index'
 import MySkills from './Screens/MainTitle/Spanish/mySkillsSpanish/index'
 import Contact from './Screens/MainTitle/Spanish/contactSpanish/index'
+import coinSound from './Mp3/InsertCoinSound.mp3'
+
 
 import React, { useContext } from 'react'
 import { ArcadeContext } from '../../Context'
 
-
 // IMPORTS CON MAYUSCULA AL PRINCIPIO 
+
+function playSound (elementSound) {
+  let sound = new Audio(elementSound)
+  sound.play()
+}
 
 
 function Home() {
 
+  
   const context = useContext(ArcadeContext)
   
 
@@ -34,10 +41,11 @@ function Home() {
         </div>
 
         <div className='caja_2 rounded-b-md '>
-          <div className='insert_coin_box' 
+          <div className='insert_coin_box' id='insertCoinBox'
           onClick={(event) =>{
             context.coinInsert(event);
             context.addCoin(event);
+            playSound(coinSound)
           }
          
           }
