@@ -12,7 +12,7 @@ const phoneNumbersInfo = [
   {info:"https://www.linkedin.com/in/tomas-cejas-033439251/"},
   {info:"https://github.com/Tomy2931"},
   {info:"tomas.cejas@hotmail.com"},
-  {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años"},
+  {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años!!! >:("},
 ]
 
 

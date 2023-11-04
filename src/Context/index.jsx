@@ -47,7 +47,7 @@ export const ArcadeProvider = ({children}) => {
     
     const [numberPressed,setNumberPressed] = useState("") //Botones en pantalla
     const [bubbleTextPhone,setbubbleTextPhone] = useState(false) //Aparicion de globo de texto
-    const [numberInfo,setNumberInfo] = useState(0) //Aparicion de globo de texto
+    const [numberInfo,setNumberInfo] = useState(0) 
     
     function buttonPress (num) {
       
@@ -56,19 +56,43 @@ export const ArcadeProvider = ({children}) => {
       }
     }
    
-      if (numberPressed.length == 4) {
+    useEffect(() => {
+      if (numberPressed.length === 4) {
         setTimeout(() => {
           setbubbleTextPhone(true)
         }, 1400);
-
+        if (numberPressed === "2284") {
+          setNumberInfo(0)
+        }
+        if (numberPressed === "3842") {
+          setNumberInfo(1)
+        }
+        if (numberPressed === "6784") {
+          setNumberInfo(2)
+        }
+        if (numberPressed === "7731") {
+          setNumberInfo(3)
+        }
+        if (numberPressed === "1852") {
+          setNumberInfo(4)
+        }
+        if (numberPressed === "2089") {
+          setNumberInfo(5)
+        } 
+        
       }
+    }, [numberPressed]);
     
       const closeBubbleTextPhone = () => {
         setbubbleTextPhone(false)
         setNumberPressed("")
       }
 
-   
+      const answerText = () => {
+        if (numberPressed.length == 4){
+          
+        }
+      }
 
     return (
         <ArcadeContext.Provider value={{

@@ -131,9 +131,9 @@
     text-align: left;
     font-family: 'Pixelify Sans', sans-serif;
     font-family: 'Silkscreen', sans-serif;
-    width: 60%;
-    height: 20%;
-    
+    width: 65%;
+    height: 40%;
+    margin-top: 20px;
     overflow:hidden;
 
     animation: typing 1s steps(17), blink .5s infinite step-end alternate;

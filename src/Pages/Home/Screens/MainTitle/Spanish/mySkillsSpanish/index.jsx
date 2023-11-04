@@ -24,7 +24,7 @@ function mySkills() {
     {icon:htmlIcon, name: "HTML", desc: "Lenguaje de marcado para la elaboración de páginas web.", type: "Lenguaje"  },
     {icon:cssIcon, name: "CSS", desc: "Lenguaje de programación utilizado para definir y controlar la presentación y el diseño de páginas web.", type: "Lenguaje"  },
     {icon:JSIcon, name: "JavaScript", desc: "Llenguaje de programación utilizado en el desarrollo web que permite agregar interactividad y funcionalidad a sitios web.", type: "Lenguaje"  },
-    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de Java Script,utilizada para construir interfaces de usuario interactivas y reactivas en aplicaciones web.", type: "Librería"  },
+    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de Java Script,utilizada para construir interfaces de usuario interactivas en aplicaciones web.", type: "Librería"  },
     {icon:tailwindIcon, name: "Tailwdind", desc: "Permite a los desarrolladores y diseñadores aplicar estilos a los sitios web de una manera ágil y optimizada.", type: "Framework"  },
     {icon:pythonIcon, name: "Python", desc: "Lenguaje de programación utilizado en diversas aplicaciones, desde desarrollo web hasta análisis de datos y automatización de tareas. ", type: "Lenguaje"  },
     {icon:potion, name: "Poción", desc: "Una rara poción, no sé que hace...", type: "Consumible"  },
