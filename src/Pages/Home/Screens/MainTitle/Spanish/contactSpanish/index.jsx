@@ -8,13 +8,13 @@ import { ArcadeContext } from '../../../../../../Context'
 
 const phoneNumbersInfo = [
   {info:"+54 221 6267595"},
-  {info:"@tomy_cejas"},
+  {info:"https://www.instagram.com/tomy_cejas/"},
   {info:"https://www.linkedin.com/in/tomas-cejas-033439251/"},
   {info:"https://github.com/Tomy2931"},
   {info:"tomas.cejas@hotmail.com"},
   {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años!!! >:("},
+  {info:"Ningun numero coincide"},
 ]
-
 
 
 function contact() {
@@ -39,7 +39,9 @@ function contact() {
 
                         <h1 className='text-white ml-2 absolute text-2xl top-4 left-[28%]'>???:</h1>
                             
-                              <h2 className='phoneGuyText text-white ml-1 text-xs'> {phoneNumbersInfo[context.numberInfo].info} </h2>
+                              <a className='phoneGuyText text-white ml-1 text-xs' target="_blank"
+                              href={ (context.numberInfo == 0 || context.numberInfo == 5  )  ? null  : phoneNumbersInfo[context.numberInfo].info } >
+                                {phoneNumbersInfo[context.numberInfo].info} </a>
                           
                         </div>
                       <div>

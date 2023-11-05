@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen&display=swap');
+
+
+.emailMain{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.numberScreenCont{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(0, 31, 0);
+    animation: numbersScreenAnimation 0.98s  infinite ;
+}
+
+
+
+.phoneGuyText{
+    text-align: left;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    width: 65%;
+    height: 40%;
+    margin-top: 20px;
+    overflow:hidden;
+
+    animation: typing 1s steps(17), blink .5s infinite step-end alternate;
+    user-select: all;
+}
+
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes blink {
+
+    50% { border-color: transparent}
+    
+   }
+
+
+@keyframes phoneBookMovement{
+    0%{
+        rotate: 0deg
+        
+    }
+    25%{
+        rotate: 15deg
+    }
+    50%{
+        rotate: 0deg
+    }
+    75%{
+        rotate: 15deg
+    }
+    100%{
+        rotate: 0deg
+    }
+}
+@keyframes numbersScreenAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media (min-width: 1440px ) {
+    
+}
