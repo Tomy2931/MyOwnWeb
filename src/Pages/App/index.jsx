@@ -9,22 +9,24 @@ const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/email', element: <Email /> },
-    { path: '/*', element: <NotFound /> },
   ])
 
   return routes
 }
 
-const App = () => {
+function App() {
+
+
+
   return (
     <ArcadeProvider>
-    <HashRouter>
-    <main>
-      <AppRoutes />
-    </main>
-    </HashRouter>
+      <HashRouter> 
+        <main>
+          <AppRoutes/>
+        </main>
+      </HashRouter>
     </ArcadeProvider>
-  )
+  );
 }
 
 export default App
