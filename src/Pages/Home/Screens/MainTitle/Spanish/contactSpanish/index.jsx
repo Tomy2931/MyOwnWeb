@@ -4,6 +4,7 @@ import BookPhone from './bookPhone'
 import phoneBook from '../../../../imgs/phoneBook.png'
 import phoneGuy from '../../../../imgs/phoneGuy.jfif'
 import React, { useContext } from 'react'
+import textSound from '../../../../Mp3/TextSound.mp3'
 import { ArcadeContext } from '../../../../../../Context'
 
 const phoneNumbersInfo = [
@@ -29,15 +30,16 @@ function contact() {
             <BookPhone/>  
 
             {/* Telefono para marcar */}
-            <PhoneBox/>
+            <PhoneBox 
+            />
 
             <div className={`w-[100%] h-[100%] absolute ${(context.bubbleTextPhone == true ?  'onScreenStyle' : 'offScreenStyle')}`}>
 
               <div className='w-[100%] h-[100%] absolute flex justify-center items-end '>
-                  <div className='bubbleTextPhone w-[80%] h-[33%] mb-5 rounded-lg relative'>
+                  <div className='bubbleTextPhone w-[80%] h-[33%] mb-5 rounded-lg relative' >
                       <h1 className='Xclose text-white ml-2 absolute text-2xl top-1 right-4' onClick={context.closeBubbleTextPhone}>X</h1>
                       <img className='phoneGuyIcon' src={phoneGuy} alt="imagenPerfil" />
-
+                        <audio src={textSound} ></audio>
                         <h1 className='text-white ml-2 absolute text-2xl top-4 left-[28%]'>???:</h1>
                             
                               <a className='phoneGuyText text-white ml-1 text-xs' target="_blank"
