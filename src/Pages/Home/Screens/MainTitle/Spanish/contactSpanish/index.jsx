@@ -6,7 +6,15 @@ import phoneGuy from '../../../../imgs/phoneGuy.jfif'
 import React, { useContext } from 'react'
 import textSound from '../../../../Mp3/TextSound.mp3'
 import { ArcadeContext } from '../../../../../../Context'
+import pdf from "../../../../imgs/cheese.png"
 
+function letterListRandom() {
+  const letterList = ["Vas a ganar la loteria","Tenes un hermano perdido", "Vas a tener una buena noticia mañana","Vas a perder la mitad de tus ahorros", "Estoy detras tuyo","Messi va a ser presidente de Argentina","Mañana recibirás una mala noticia","Hay 10 dolares en tu bolsillo","Vas a tener nuevos amigos el proximo año","Alguien conocido te traicionará","Vas a tener una nueva mascota", "Saldrá una nueva temporada de tu serie favorita", "La nueva temporada de tu serie favorita nunca saldrá","El proximo año viajarás"]
+  let num = Math.floor(Math.random() * letterList.length)
+  const randomletter = letterList[num]
+  return randomletter;
+}
+let infoLetter = letterListRandom()
 const phoneNumbersInfo = [
   {info:"+54 221 6267595",href:"" },
   {info:"@Tomy_cejas",href:"https://www.instagram.com/tomy_cejas/" },
@@ -15,6 +23,8 @@ const phoneNumbersInfo = [
   {info:"tomas.cejas@hotmail.com",href:"" },
   // {info:"tomas.cejas@hotmail.com",href:"http://localhost:5173/MyOwnWeb/#/email" },
   {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años!!! >:(",href:"" },
+  {info:infoLetter,href:"" },
+  {info:"Pinterest",href:"" },
   {info:"Ningun numero coincide",href:"" },
 ]
 
@@ -43,8 +53,8 @@ function contact() {
                         <h1 className='text-white ml-2 absolute text-2xl top-4 left-[28%]'>???:</h1>
                             
                               <a className='phoneGuyText text-white ml-1 text-xs' target="_blank"
-                              href={ (context.numberInfo == 0 || context.numberInfo == 4 || context.numberInfo == 5 )  ? null  : phoneNumbersInfo[context.numberInfo].href } >
-                                {phoneNumbersInfo[context.numberInfo].info} </a>
+                              href={ (context.numberInfo == 0 || context.numberInfo == 4 || context.numberInfo == 5 )  ? null  : phoneNumbersInfo[context.numberInfo].href } download={context.numberInfo == 7 ? pdf : null}>
+                                {phoneNumbersInfo[context.numberInfo].info}  </a>
                           
                         </div>
                       <div>

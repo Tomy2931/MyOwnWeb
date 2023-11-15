@@ -80,8 +80,14 @@ export const ArcadeProvider = ({children}) => {
           case "2089":
             setNumberInfo(5);
             break;
-          default:
+          case "4672":
             setNumberInfo(6);
+            break;
+          case "9710":
+            setNumberInfo(7);
+            break;
+          default:
+            setNumberInfo(8);
         }
       }
       
