@@ -21,7 +21,14 @@ export const ArcadeProvider = ({children}) => {
     //Pantalla About My
 
     const [questionNumber, setQuestionNumber] = useState(0)
-    const answersList = ["Mi nombre es Tomas Cejas, pero me gusta que me digan Tomy"]
+    const [nameShow, setNameShow] = useState(false)
+
+    const clickQuestion = (num) => {setQuestionNumber(num)}
+      
+    const nameReveal = () => {
+      setNameShow(true)
+    }
+    
 
 
     //Pantalla Inventario
@@ -83,11 +90,11 @@ export const ArcadeProvider = ({children}) => {
           case "4672":
             setNumberInfo(6);
             break;
-          case "9710":
+          case "6666":
             setNumberInfo(7);
             break;
           default:
-            setNumberInfo(8);
+            setNumberInfo(numberPressed.length);
         }
       }
       
@@ -134,7 +141,10 @@ export const ArcadeProvider = ({children}) => {
         closeBubbleTextPhone,
         numberInfo,
         setNumberInfo,
-
+        clickQuestion,
+        nameShow,
+        setNameShow,
+        nameReveal,
     
         }}>
           {children}

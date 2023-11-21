@@ -5,6 +5,18 @@ import React, { useContext } from 'react'
 import { ArcadeContext } from '../../../../../../Context'
 
 function AboutMySpanish() {
+
+  const answers = [
+    "Hola, todo bien?",
+    "Mi nombre es Tomás Cejas",
+    "Tengo 22 años",
+    "Soy de Argentina, Buenos Aires",
+    "Actualmente me encuentro estudiando",
+    "Estoy en busqueda de mi primer trabajo",
+    "Me gusta programar y jugar",
+  ]
+
+
   const context = useContext(ArcadeContext)
     return (
       <main className={`w-[100%] h-[100%] ${(context.languageSelected == '3' ?  'onScreenStyle' : 'offScreenStyle')}`}>
@@ -16,9 +28,12 @@ function AboutMySpanish() {
 
           <div className='textBubbleeBox relative '>
             <img className='w-[100%]  top-1 left-0'  src={dialogue} alt="" />
-            <p className='dialogueName'> ???</p>
-            <p className='dialogueText'> Lorem</p>
-            {/* <p className='dialogueText'> gusta que me digan Tomy </p> */}
+            <p className='dialogueName mt-1'> {
+              (context.nameShow == true ? "Tomás" : "???")
+            }: </p>
+            <p className='dialogueText mt-1'> {answers[context.questionNumber]} </p>
+            
+            
 
           </div>
         </div>
@@ -26,12 +41,12 @@ function AboutMySpanish() {
 
           <div className='textBox'>
 
-            {/* <p className='textBox_questions' onClick={context.setQuestionNumber('1')}>1. ¿Cuál es tu nombre? </p>
-            <p className='textBox_questions' onClick={context.setQuestionNumber('2')}>2. ¿Cual es tu edad? </p>
-            <p className='textBox_questions' onClick={context.setQuestionNumber('3')}>3. ¿De dónde sos?</p>
-            <p className='textBox_questions' onClick={context.setQuestionNumber('4')}>4. ¿A qué te dedicas?</p>
-            <p className='textBox_questions' onClick={context.setQuestionNumber('5')}>5. ¿Cúal es tu experiencia?  </p>
-            <p className='textBox_questions' onClick={context.setQuestionNumber('6')}>6. ¿Qué te gusta hacer?  </p> */}
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(1); context.nameReveal()}}>1. ¿Cuál es tu nombre? </p>
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(2)}}>2. ¿Cual es tu edad? </p> 
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(3)}}>3. ¿De dónde sos?</p>
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(4)}}>4. ¿A qué te dedicas?</p>
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(5)}}>5. ¿Cúal es tu experiencia?  </p>
+            <p className='textBox_questions' onClick={() => {context.clickQuestion(6)}}>6. ¿Qué te gusta hacer?  </p> 
                   
           </div>
         </div>
