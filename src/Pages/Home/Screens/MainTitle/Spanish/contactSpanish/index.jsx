@@ -21,11 +21,12 @@ const phoneNumbersInfo = [
   {info:"https://www.linkedin.com/in/tomas-cejas-033439251/",href:"https://www.linkedin.com/in/tomas-cejas-033439251/" },
   {info:"https://github.com/Tomy2931",href:"https://github.com/Tomy2931" },
   {info:"tomas.cejas@hotmail.com",href:"" },
-  // {info:"tomas.cejas@hotmail.com",href:"http://localhost:5173/MyOwnWeb/#/email" },
   {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años!!! >:(",href:"" },
   {info:infoLetter,href:"" },
-  {info:"Dont Click Here",href:"https://www.youtube.com/shorts/HmaMkZbaUWI?feature=share" },
   {info:"Ningun numero coincide",href:"" },
+  {info:"Dont Click Here",href:"https://www.youtube.com/shorts/HmaMkZbaUWI?feature=share" },
+
+  // {info:"tomas.cejas@hotmail.com",href:"http://localhost:5173/MyOwnWeb/#/email" },
 ]
 
 

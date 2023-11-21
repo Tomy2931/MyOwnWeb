@@ -69,32 +69,32 @@ export const ArcadeProvider = ({children}) => {
           setbubbleTextPhone(true)
         }, 1400);
         switch (numberPressed) {
-          case "2284":
+          case "2284": //wsp
             setNumberInfo(0);
             break;
-          case "3842":
+          case "3842": //ig
             setNumberInfo(1);
             break;
-          case "6784":
+          case "6784": //linkedin
             setNumberInfo(2);
             break;
-          case "7731":
+          case "7731"://github
             setNumberInfo(3);
             break;
-          case "1852":
+          case "1852"://correo
             setNumberInfo(4);
             break;
-          case "2089":
+          case "2089"://pizza
             setNumberInfo(5);
             break;
-          case "4672":
+          case "4672"://letter
             setNumberInfo(6);
             break;
           case "6666":
-            setNumberInfo(7);
+            setNumberInfo(8);
             break;
           default:
-            setNumberInfo(numberPressed.length);
+            setNumberInfo(7);
         }
       }
       
