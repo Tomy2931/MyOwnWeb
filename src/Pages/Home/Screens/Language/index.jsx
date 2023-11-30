@@ -23,7 +23,7 @@ function LanguageScreen() {
                 <div className='LanguageOption2'>
 
                     <img className='pointHand2' src={pointHand} alt="" />
-                    <h2 onClick={()=> {context.setLanguageSelected('2');}}>English</h2>
+                    <h2 onClick={()=> {context.setLanguageSelected('7');}}>English</h2>
 
                 </div>
 

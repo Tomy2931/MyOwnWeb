@@ -54,10 +54,13 @@ function Home() {
 
         </div>
         
-        <img className='boton_1 ' src={red_button} alt="" />
+        <img className='boton_1' src={red_button} alt="" />
         <img className='boton_2' onClick={()=> {
           if (context.languageSelected !== undefined){
-            context.setLanguageSelected('1')
+            if (context.languageSelected == '1'){
+              context.setLanguageSelected('1')
+
+            }
           }
 
         }} 

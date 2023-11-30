@@ -6,7 +6,6 @@ import { ArcadeContext } from '../../../../../Context'
 
 function mainTitleSpanish() {
     const context = useContext(ArcadeContext)
-
     return (
         <main className={`w-[100%] h-[100%]  ${(context.languageSelected == '1' ?  'onScreenStyle' : 'offScreenStyle')}`}>
             <div className='SpanishMenuTitleMainBox'>
