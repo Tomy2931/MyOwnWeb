@@ -10,10 +10,20 @@ https://tomy2931.github.io/MyOwnWeb/
 
 - Insert the coin clicking on the gray box at the bottom right
 
+![Captura de pantalla 2023-12-03 015613 (1)](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/333b0709-de9f-439b-a3db-d3289db8eab2)
 
-![Captura de pantalla 2023-12-03 015613](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/6b8ed098-a7a3-4ade-89fc-6d3ab6acb7d2)
+- Select a section
 
-![Captura de pantalla 2023-12-03 015945](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/14d441fa-3404-48a6-889b-ab4966a7df44)
+![Captura de pantalla 2023-12-03 020101](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/7e293e40-f79a-4aea-995f-598b82ca4acc)
+
+- You can go back pressing on the orange button
+
+![Captura de pantalla 2023-12-03 020101](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/34371a2e-bc42-4612-a7a7-a250c369a70f)
+
+
+
+
+
 
 Some icons of:
 
