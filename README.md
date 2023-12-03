@@ -8,9 +8,10 @@ https://tomy2931.github.io/MyOwnWeb/
 
 ## How to use
 
-![image](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/05e4da1c-ec8e-44a4-9b4b-9f2f2c5f6e35)
+- Insert the coin clicking on the gray box at the bottom right
 
-To insert the icon just click on 
+![Captura de pantalla 2023-12-03 015613](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/bef316d4-316a-498a-988a-e40e53e847c5)
+
 
 Some icons of:
 
