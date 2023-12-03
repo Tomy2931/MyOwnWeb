@@ -10,7 +10,8 @@ https://tomy2931.github.io/MyOwnWeb/
 
 - Insert the coin clicking on the gray box at the bottom right
 
-![Captura de pantalla 2023-12-03 015613](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/bef316d4-316a-498a-988a-e40e53e847c5)
+
+![Captura de pantalla 2023-12-03 015613](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/6b8ed098-a7a3-4ade-89fc-6d3ab6acb7d2)
 
 
 Some icons of:
