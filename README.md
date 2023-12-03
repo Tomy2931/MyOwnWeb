@@ -21,7 +21,8 @@ https://tomy2931.github.io/MyOwnWeb/
 - You can go back pressing on the orange button
 
 
-![Captura de pantalla 2023-12-03 020153](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/7c216494-4e43-46c7-9f3d-281ba18cd6e5)
+![Captura de pantalla 2023-12-03 020153](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/22f2d0ba-af04-4c11-81bd-484400f905ad)
+
 
 
 
