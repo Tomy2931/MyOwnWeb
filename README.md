@@ -9,8 +9,7 @@ https://tomy2931.github.io/MyOwnWeb/
 ## How to use
 
 - Insert the coin clicking on the gray box at the bottom right
-- 
-
+  
 ![Captura de pantalla 2023-12-03 015613 (1)](https://github.com/Tomy2931/MyOwnWeb/assets/99775229/333b0709-de9f-439b-a3db-d3289db8eab2)
 
 - Select a section
