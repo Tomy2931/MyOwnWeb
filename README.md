@@ -1,8 +1,16 @@
 # My Portafolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my portafolio, it's basically my personal and professional information inside an arcade machine, transforming each section of information into an interactive screen with a video game theme.
 
-Currently, two official plugins are available:
+# Link:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://tomy2931.github.io/MyOwnWeb/
+
+
+Some icons of:
+
+https://es.vecteezy.com
+
+https://www.flaticon.com
+
+
