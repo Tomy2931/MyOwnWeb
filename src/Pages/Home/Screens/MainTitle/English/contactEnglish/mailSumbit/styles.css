@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Silkscreen&display=swap');
+
+
+.emailMain{
+    width: 100vw;
+    height: 100vh;
+}
+
+.paperImgDiv{
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.paperTittle{
+    position: absolute;
+    top: 10%;
+}
+
+.sello{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(192, 81, 17);
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 1);
+    
+    bottom: 2%;
+    right: 3%;
+}
+.selloCirc{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(63, 23, 0);
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+
+
+.numberScreenCont{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(0, 31, 0);
+    animation: numbersScreenAnimation 0.98s  infinite ;
+}
+
+
+
+
+.phoneGuyText{
+    text-align: left;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    width: 65%;
+    height: 40%;
+    margin-top: 20px;
+    overflow:hidden;
+
+    animation: typing 1s steps(17), blink .5s infinite step-end alternate;
+    user-select: all;
+}
+
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes blink {
+
+    50% { border-color: transparent}
+    
+   }
+
+
+@keyframes phoneBookMovement{
+    0%{
+        rotate: 0deg
+        
+    }
+    25%{
+        rotate: 15deg
+    }
+    50%{
+        rotate: 0deg
+    }
+    75%{
+        rotate: 15deg
+    }
+    100%{
+        rotate: 0deg
+    }
+}
+@keyframes numbersScreenAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media (min-width: 1440px ) {
+    
+}

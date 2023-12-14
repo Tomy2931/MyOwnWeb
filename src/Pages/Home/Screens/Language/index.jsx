@@ -7,7 +7,7 @@ import { ArcadeContext } from '../../../../Context'
 function LanguageScreen() {
     const context = useContext(ArcadeContext)
     return (
-        <main className={`LanguageScreen_Main ${!context.coinScreen ? 'onScreenStyle' : 'offScreenStyle'} ${context.languageSelected !== undefined ? 'offScreenStyle' : ''}`}>
+        <main className={`LanguageScreen_Main ${!context.coinScreen ? 'onScreenStyle' : 'offScreenStyle'} ${context.screenView !== undefined ? 'offScreenStyle' : ''}`}>
 
             <div className='LanguageBox'>
                 
@@ -16,14 +16,20 @@ function LanguageScreen() {
                 <div className='LanguageOption1'>
 
                     <img className='pointHand1' src={pointHand} alt="" />
-                    <h2 onClick={()=> {context.setLanguageSelected('1');}}>Spanish</h2>
+                    <h2 onClick={()=> {
+                        context.setScreenView('1')
+                        context.setLanguageSelected('1')
+                        ;}}>Spanish</h2>
 
                 </div>
 
                 <div className='LanguageOption2'>
 
                     <img className='pointHand2' src={pointHand} alt="" />
-                    <h2 onClick={()=> {context.setLanguageSelected('7');}}>English</h2>
+                    <h2 onClick={()=> {
+                        context.setScreenView('2')
+                        context.setLanguageSelected('2')
+                        ;}}>English</h2>
 
                 </div>
 

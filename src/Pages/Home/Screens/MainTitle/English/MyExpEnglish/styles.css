@@ -26,7 +26,10 @@
     border: 2px solid red;
 }
 
-
+.achievementTittle{
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
 .achievementsLockedBox{
     display: flex;
     flex-direction: column;
@@ -56,12 +59,10 @@
 .achievementsTextsMain{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
+    font-size: 0.7rem;
     
-}
-.achievementsTittle{
-    text-decoration: underline;
-    font-size: 1.2rem;
+    
 }
 
 .achievementsProgressBar{
@@ -91,7 +92,11 @@
     .achievementsIcon{
         height: 85%;
     }
-    .achievementsTittle{
-        font-size: 1.6rem;
+    .achievementsTextsMain{
+        font-size: 1.1rem; 
+    }
+    .achievementTittle{
+        
+        font-size: 1.5rem;
     }
 }

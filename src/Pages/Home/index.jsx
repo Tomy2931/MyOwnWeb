@@ -11,6 +11,10 @@ import MyExperience from './Screens/MainTitle/Spanish/myExpSpanish/index'
 import MySkills from './Screens/MainTitle/Spanish/mySkillsSpanish/index'
 import Contact from './Screens/MainTitle/Spanish/contactSpanish/index'
 import coinSound from './Mp3/InsertCoinSound.mp3'
+import AboutMeEnglish from './Screens/MainTitle/English/aboutMyEnglish'
+import MySkillsEnglish from './Screens/MainTitle/English/MySkillsEnglish'
+import ContactEnglish from './Screens/MainTitle/English/contactEnglish'
+import MyExperienceEnglish from './Screens/MainTitle/English/MyExpEnglish'
 
 
 import React, { useContext } from 'react'
@@ -56,14 +60,16 @@ function Home() {
         
         <img className='boton_1' src={red_button} alt="" />
         <img className='boton_2' onClick={()=> {
-          if (context.languageSelected !== undefined){
-            if (context.languageSelected == '1'){
-              context.setLanguageSelected('1')
-
-            }
+          if (context.languageSelected > 0){
+            if (context.languageSelected == 1)
+            context.setScreenView('1')
+            if (context.languageSelected == 2)
+            context.setScreenView('2')
+          }
+        
           }
 
-        }} 
+        } 
         src={yellow_button} alt="" />
 
         {/* Screen: */}
@@ -98,6 +104,14 @@ function Home() {
 
           <EnglishMenuTitle/>
 
+          <AboutMeEnglish/>
+
+          <MyExperienceEnglish/>
+
+
+          <MySkillsEnglish/>
+          
+          <ContactEnglish/>
 
         </div>
 

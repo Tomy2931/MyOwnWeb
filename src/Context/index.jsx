@@ -17,8 +17,9 @@ export const ArcadeProvider = ({children}) => {
     
     //Lenguaje seleccionado 
     const [languageSelected,setLanguageSelected] = useState()
+    const [screenView,setScreenView] = useState()
 
-    //Pantalla About My
+    //Pantalla About Me
 
     const [questionNumber, setQuestionNumber] = useState(0)
     const [nameShow, setNameShow] = useState(false)
@@ -118,6 +119,8 @@ export const ArcadeProvider = ({children}) => {
         coinInsert,
         languageSelected,
         setLanguageSelected,
+        screenView,
+        setScreenView,
         isBookOpen,
         setIsBookOpen,
         openBook,

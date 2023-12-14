@@ -6,10 +6,16 @@ import phoneGuy from '../../../../imgs/phoneGuy.jfif'
 import React, { useContext } from 'react'
 import textSound from '../../../../Mp3/TextSound.mp3'
 import { ArcadeContext } from '../../../../../../Context'
-import pdf from "./Pdf.pdf"
+
 
 function letterListRandom() {
-  const letterList = ["Vas a ganar la loteria","Tenes un hermano perdido", "Vas a tener una buena noticia mañana","Vas a perder la mitad de tus ahorros", "Estoy detras tuyo","Messi va a ser presidente de Argentina","Mañana recibirás una mala noticia","Hay 10 dolares en tu bolsillo","Vas a tener nuevos amigos el proximo año","Alguien conocido te traicionará","Vas a tener una nueva mascota", "Saldrá una nueva temporada de tu serie favorita", "La nueva temporada de tu serie favorita nunca saldrá","El proximo año viajarás"]
+  const letterList = ["You are going to win the lottery"
+  ,"You have a lost brother", "You're going to have good news tomorrow"
+  ,"You are going to lose half of your savings", "I am behind you","Messi is going to be president of Argentina",
+  "Tomorrow you will receive bad news","There's 10 dollars in your pocket",
+  "You're going to have new friends the next year","Someone betrays you",
+  "You are going to have a new pet", "A new season of your favorite series will be released", 
+  "The new season of your favorite series will never come out","You're going to lose a finger next month"]
   let num = Math.floor(Math.random() * letterList.length)
   const randomletter = letterList[num]
   return randomletter;
@@ -21,19 +27,19 @@ const phoneNumbersInfo = [
   {info:"https://www.linkedin.com/in/tomas-cejas-033439251/",href:"https://www.linkedin.com/in/tomas-cejas-033439251/" },
   {info:"https://github.com/Tomy2931",href:"https://github.com/Tomy2931" },
   {info:"tomas.cejas@hotmail.com",href:"" },
-  {info:"Deje de llamar a este numero, la pizzería cerró hace 2 años!!! >:(",href:"" },
+  {info:"Stop calling, the Pizza Shop has been closed 2 years ago!!! >:(",href:"" },
   {info:infoLetter,href:"" },
-  {info:"Ningun numero coincide",href:"" },
+  {info:"No number matches",href:"" },
   {info:"Dont Click Here",href:"https://www.youtube.com/shorts/HmaMkZbaUWI?feature=share" },
 
   // {info:"tomas.cejas@hotmail.com",href:"http://localhost:5173/MyOwnWeb/#/email" },
 ]
 
 
-function contact() {
+function ContactEnglish() {
   const context = useContext(ArcadeContext)
     return (
-        <main className={`w-[100%] h-[100%]  ${(context.screenView == '6' ?  'onScreenStyle' : 'offScreenStyle')}`}>
+        <main className={`w-[100%] h-[100%]  ${(context.screenView == '10' ?  'onScreenStyle' : 'offScreenStyle')}`}>
           <div className='contactMain'>
             <img className='w-12 absolute top-5 left-5 phoneBook cursor-pointer' onClick={context.openBook} src={phoneBook} alt="" />
 
@@ -72,4 +78,4 @@ function contact() {
     )
   }
 
-export default contact
+export default ContactEnglish

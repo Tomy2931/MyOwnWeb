@@ -38,11 +38,10 @@
 .dialogueText{
     position: absolute;
     font-size:0.88rem;
-    top: 30%;
+    top: 27%;
     left: 8%;
     text-align: left;
-   
-    
+
     width: 20ch;
 
     overflow:hidden;

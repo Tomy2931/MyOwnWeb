@@ -19,7 +19,7 @@ function AboutMySpanish() {
 
   const context = useContext(ArcadeContext)
     return (
-      <main className={`w-[100%] h-[100%] ${(context.languageSelected == '3' ?  'onScreenStyle' : 'offScreenStyle')}`}>
+      <main className={`w-[100%] h-[100%] ${(context.screenView == '3' ?  'onScreenStyle' : 'offScreenStyle')}`}>
 
           <div className='aboutMySpanishMain' >
 

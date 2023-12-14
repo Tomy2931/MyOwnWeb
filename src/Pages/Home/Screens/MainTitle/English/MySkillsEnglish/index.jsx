@@ -17,22 +17,22 @@ import cruzIcon from '../../../../imgs/cruzIcon.png'
 import React, { useContext } from 'react'
 import { ArcadeContext } from '../../../../../../Context'
 
-function mySkills() {
+function MySkillsEnglish() {
     const context = useContext(ArcadeContext)
     const imgList = [htmlIcon,cssIcon,JSIcon,reactIcon,tailwindIcon,pythonIcon,potion,apple,sword,cheese,dice,control]
     const itemsDetails = [
-    {icon:htmlIcon, name: "HTML", desc: "Lenguaje de marcado para la elaboración de páginas web.", type: "Lenguaje"  },
-    {icon:cssIcon, name: "CSS", desc: "Lenguaje de programación utilizado para definir y controlar la presentación y el diseño de páginas web.", type: "Lenguaje"  },
-    {icon:JSIcon, name: "JavaScript", desc: "Lenguaje de programación utilizado en el desarrollo web que permite agregar interactividad y funcionalidad a sitios web.", type: "Lenguaje"  },
-    {icon:reactIcon, name: "React.JS", desc: "Biblioteca de Java Script,utilizada para construir interfaces de usuario interactivas en aplicaciones web.", type: "Librería"  },
-    {icon:tailwindIcon, name: "Tailwdind", desc: "Permite a los desarrolladores y diseñadores aplicar estilos a los sitios web de una manera ágil y optimizada.", type: "Framework"  },
-    {icon:pythonIcon, name: "Python", desc: "Utilizado en diversas aplicaciones, desde desarrollo web hasta análisis de datos y automatización de tareas. ", type: "Lenguaje"  },
-    {icon:potion, name: "Poción", desc: "Una rara poción, no sé que hace...", type: "Consumible"  },
-    {icon:apple, name: "Manzana", desc: "Una simple manzana.", type: "Consumible"  },
-    {icon:sword, name: "Espada", desc: "Una espada de madera.", type: "Arma"  },
-    {icon:cheese, name: "Queso", desc: "Un rico queso, no sé como terminó en mi mochila.", type: "Consumible"  },
-    {icon:dice, name: "Dado", desc: "Un bonito dado para jugar el azar", type: "Objeto"  },
-    {icon:control, name: "???", desc: "No tengo idea que es esto.", type: "Raro"  },
+    {icon:htmlIcon, name: "HTML", desc: "Markup language for creating web pages.", type: "Language"  },
+    {icon:cssIcon, name: "CSS", desc: "Programming language used to define and control the presentation and design of web pages.", type: "Language"  },
+    {icon:JSIcon, name: "JavaScript", desc: "Programming language used in web development that allows adding interactivity and functionality to websites.", type: "Language"  },
+    {icon:reactIcon, name: "React.JS", desc: "JavaScript library, used to build interactive user interfaces in web applications.", type: "Library"  },
+    {icon:tailwindIcon, name: "Tailwdind", desc: "It allows developers and designers to apply styles to websites in an agile and optimized way.", type: "Framework"  },
+    {icon:pythonIcon, name: "Python", desc: "Programming language used in various applications, from web development to data analysis and task automation. ", type: "Language"  },
+    {icon:potion, name: "Potion", desc: "A strange potion, I don't know what it does...", type: "Consumable"  },
+    {icon:apple, name: "Apple", desc: "A simple apple.", type: "Consumable"  },
+    {icon:sword, name: "Sword", desc: "A wooden sword.", type: "Weapon"  },
+    {icon:cheese, name: "Cheese", desc: "A delicious cheese, I don't know how it ended up in my backpack.", type: "Consumable"  },
+    {icon:dice, name: "Dice", desc: "A nice dice 👍🏻", type: "Object"  },
+    {icon:control, name: "???", desc: "I have no idea what this is.", type: "Rare"  },
 
 ]
     const i = context.selectedItemDetail
@@ -40,7 +40,7 @@ function mySkills() {
     const detailValue = itemsDetails[i].icon
    
     return (
-            <main className={`w-[100%] h-[100%]  ${(context.screenView == '5' ?  'onScreenStyle' : 'offScreenStyle')}  ${(context.isItemDetailOpen == true ?  'offScreenStyle' : 'onScreenStyle')}} `}>
+            <main className={`w-[100%] h-[100%]  ${(context.screenView == '9' ?  'onScreenStyle' : 'offScreenStyle')}  ${(context.isItemDetailOpen == true ?  'offScreenStyle' : 'onScreenStyle')}} `}>
                  <section className={`w-[100%] h-[100%]  ${(context.isItemDetailOpen == true ?  'offScreenStyle' : 'onScreenStyle')}`}>
                     <div className='mySkillsMain' >
                         <div className='myCoinsBox absolute top-0 right-5 flex items-center '>
@@ -50,7 +50,7 @@ function mySkills() {
                 
                         <div className='mySkillsBox'>
                 
-                            <h2 className='inventoryTitle'>Inventario</h2>
+                            <h2 className='inventoryTitle'>Inventory</h2>
 
                             <div className='inventorySpaceContainer'>
                                 <div className='inventorySpace' 
@@ -151,7 +151,7 @@ function mySkills() {
 
                                     <div className='typeItem flex  bg-green-400 mt-1 rounded-lg text-[0.9rem] '>
 
-                                        <h2 className='ml-1'  >Tipo:</h2> 
+                                        <h2 className='ml-1'  >Type:</h2> 
                                         <h2 className='ml-1 mr-2 font-semibold'>{itemsDetails[i].type}</h2>
 
                                     </div>
@@ -166,4 +166,4 @@ function mySkills() {
     )
   }
 
-export default mySkills
+export default MySkillsEnglish

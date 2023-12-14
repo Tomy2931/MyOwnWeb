@@ -20,30 +20,30 @@ import tiredIcon from '../../../../imgs/tiredIcon.png'
 import React, { useContext } from 'react'
 import { ArcadeContext } from '../../../../../../Context'
 
-function MyExperience () {
+function MyExperienceEnglish () {
     const context = useContext(ArcadeContext)
     return(
-        <main className={`w-[100%] h-[100%] ${(context.screenView == '4' ?  'onScreenStyle' : 'offScreenStyle')}`}>
+        <main className={`w-[100%] h-[100%] ${(context.screenView == '8' ?  'onScreenStyle' : 'offScreenStyle')}`}>
             <div className='myExperienceMain'>
                 <div className='progressBox'>
-                    <h2 className='text-red-500 text-lg'>My progreso</h2>
+                    <h2 className='teachievementTittle text-red-500'>My progress</h2>
                     <div className='progressBar flex justify-left'>
                         <div className='w-[70%] h-[90%] bg-red-600 mt-[1.5px] ml-[1.5px] '></div>
                     </div>
-                    <h2 className='text-red-500 text-lg'>70%</h2>
+                    <h2 className='teachievementTittle text-red-500'>70%</h2>
                 </div>
 
-                <h2 className='mt-10 mb-10 text-lg text-white'>Logros Bloqueados</h2>
+                <h2 className='machievementTittle t-10 mb-10 text-white'>Lockeds Achievements</h2>
 
                 {/* 1 */}
                 <div className='achievementsLockedBox'>
                     <div className='achievementsLocked'>
                         <img className='achievementsIcon' src={maletaIcon} alt="" />
 
-                        <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>A trabajar</p>
-                            <p className='text-white'>Consigue tu primer trabajo </p>
-                            <p className='text-white'>como programador</p>
+                        <div className='achievementsTextsMain '>
+                            <p className='achievementTittle text-white'>Go To Work</p>
+                            <p className='text-white'>Get your first job as a</p>
+                            <p className='text-white'>programer</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -57,9 +57,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={threeCubes} alt="" />
 
                         <div className='achievementsTextsMain mr-6'>
-                            <p className='achievementsTittle text-white'>Trilingüe</p>
-                            <p className='text-white'>Aprendede 3 lenguajes de </p>
-                            <p className='text-white'>programación</p>
+                            <p className='achievementTittle text-white'>Trilingual</p>
+                            <p className='text-white'>Learn 3 programming  </p>
+                            <p className='text-white'> languages</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -77,9 +77,8 @@ function MyExperience () {
                         <img className='achievementsIcon' src={graduationIcon} alt="" />
 
                         <div className='achievementsTextsMain mr-6'>
-                            <p className='achievementsTittle text-white'>Ultima vuelta</p>
-                            <p className='text-white'>Termina la carrera de la </p>
-                            <p className='text-white'>facultad</p>
+                            <p className='achievementTittle text-white'>Last Lap</p>
+                            <p className='text-white'>Finish the university  </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -97,9 +96,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={entrevistaIcon} alt="" />
 
                         <div className='achievementsTextsMain mr-1'>
-                            <p className='achievementsTittle text-white'>CV</p>
-                            <p className='text-white'>Ten tu primera entrevista </p>
-                            <p className='text-white'>laboral</p>
+                            <p className='achievementTittle text-white'>CV</p>
+                            <p className='text-white'>Get your first work </p>
+                            <p className='text-white'>interview</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -114,8 +113,8 @@ function MyExperience () {
                         <img className='achievementsIcon' src={grassIcon} alt="" />
 
                         <div className='achievementsTextsMain ml-5'>
-                            <p className='achievementsTittle text-white'>Levantate</p>
-                            <p className='text-white'>Sal de tu casa y toca el pasto </p>
+                            <p className='achievementTittle text-white'>Wake Up</p>
+                            <p className='text-white'>Go out and touch the grass </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -126,15 +125,15 @@ function MyExperience () {
                 
                 
                 {/* Unlockeds */}
-                <h2 className='mt-5 mb-5  text-lg text-white'>Logros Desbloqueados</h2>
+                <h2 className='achievementTittle mt-5 mb-5  text-white'>Unlocked Achievements</h2>
                 {/* 1 */}
                 <div className='achievementsLocked'>
                         <img className='achievementsIcon' src={babyIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Primeros pasos</p>
-                            <p className='text-white'>Aprende un lenguaje de </p>
-                            <p className='text-white'>programación </p>
+                            <p className='achievementTittle text-white'>First Steps</p>
+                            <p className='text-white'>Learn a programming  </p>
+                            <p className='text-white'>language </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -151,9 +150,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={JSIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>JavaScript</p>
-                            <p className='text-white'>Aprende el lenguaje de  </p>
-                            <p className='text-white'> programacion JavasCript </p>
+                            <p className='achievementTittle text-white'>JavaScript</p>
+                            <p className='text-white'>Learn the programming   </p>
+                            <p className='text-white'> language JavasCript </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -170,9 +169,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={pythonIcon} alt="" />
 
                         <div className='achievementsTextsMain mr-5'>
-                            <p className='achievementsTittle text-white'>Python</p>
-                            <p className='text-white'>Aprende el lenguaje de  </p>
-                            <p className='text-white'> programacion Python </p>
+                            <p className='achievementTittle text-white'>Python</p>
+                            <p className='text-white'>Learn the programming  </p>
+                            <p className='text-white'> language Python </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -189,9 +188,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={htmlIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Esqueleto</p>
-                            <p className='text-white'>Aprende a usar el lenguaje  </p>
-                            <p className='text-white'> HTML</p>
+                            <p className='achievementTittle text-white'>Skeleton</p>
+                            <p className='text-white'>Learn the programming  </p>
+                            <p className='text-white'> language HTML</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -208,9 +207,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={cssIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Piel</p>
-                            <p className='text-white'>Aprende a usar el lenguaje  </p>
-                            <p className='text-white'>CSS</p>
+                            <p className='achievementTittle text-white'>Skin</p>
+                            <p className='text-white'>Learn the programming</p>
+                            <p className='text-white'>language CSS</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -227,9 +226,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={handshakeIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Hermandad</p>
-                            <p className='text-white'>Aprende a usar los lenguajes  </p>
-                            <p className='text-white'>HTML y CSS</p>
+                            <p className='achievementTittle text-white'>Brotherhood</p>
+                            <p className='text-white'>Learn to use languages  </p>
+                            <p className='text-white'>HTML and CSS</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -247,9 +246,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={maquetandoIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Maquetando</p>
-                            <p className='text-white'>Crea 5 proyectos con HTML </p>
-                            <p className='text-white'> y CSS</p>
+                            <p className='achievementTittle text-white'>Layout</p>
+                            <p className='text-white'>Create 5 projects with HTML </p>
+                            <p className='text-white'> and CSS</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -270,9 +269,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={aliveIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>¡Está vivo!</p>
-                            <p className='text-white'>Implementa Javascript a un </p>
-                            <p className='text-white'>proyecto con HTML y CSS</p>
+                            <p className='achievementTittle text-white'>¡It's Alive!</p>
+                            <p className='text-white'>Implement Javascript to a</p>
+                            <p className='text-white'>project with HTML and CSS</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -289,9 +288,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={socialIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Linkedin</p>
-                            <p className='text-white'>Crea una cuenta en la pagina </p>
-                            <p className='text-white'>de Linkedin</p>
+                            <p className='achievementTittle text-white'>Linkedin</p>
+                            <p className='text-white'>Create an account on the page </p>
+                            <p className='text-white'>of Linkedin</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -308,9 +307,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={catIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>GitHub</p>
-                            <p className='text-white'>Crea una cuenta en la pagina </p>
-                            <p className='text-white'>de GitHub</p>
+                            <p className='achievementTittle text-white'>GitHub</p>
+                            <p className='text-white'>Create an account on the page </p>
+                            <p className='text-white'>of GitHub</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -327,9 +326,9 @@ function MyExperience () {
                         <img className='achievementsIcon' src={reactIcon} alt="" />
 
                         <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>ReactJS</p>
-                            <p className='text-white'>Aprende a usar la libreria de  </p>
-                            <p className='text-white'>de JavaScript: ReactJS </p>
+                            <p className='achievementTittle text-white'>ReactJS</p>
+                            <p className='text-white'>Learn to use the library  </p>
+                            <p className='text-white'>of JavaScript: ReactJS </p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -346,9 +345,9 @@ function MyExperience () {
                 <div className='achievementsLocked'>
                         <img className='achievementsIcon' src={tiredIcon} alt="" />
 
-                        <div className='achievementsTextsMain'>
-                            <p className='achievementsTittle text-white'>Por fin...</p>
-                            <p className='text-white'>Centra un div </p>
+                        <div className='achievementsTextsMain '>
+                            <p className='achievementTittle text-white'>Finally...</p>
+                            <p className='text-white'>Center a Div</p>
                         </div>
 
                         <div className='achievementsProgressBarMain'>
@@ -368,4 +367,4 @@ function MyExperience () {
     )
 }
 
-export default MyExperience
+export default MyExperienceEnglish
