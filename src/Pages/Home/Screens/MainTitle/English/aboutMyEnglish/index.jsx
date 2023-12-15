@@ -13,7 +13,7 @@ function AboutMeEnglish() {
     "I'm from Argentina, Buenos Aires",
     "I'm currently studying",
     "I'm looking for my first job",
-    "I like programing and play videogames",
+    "I like programing and playing videogames",
   ]
 
 
