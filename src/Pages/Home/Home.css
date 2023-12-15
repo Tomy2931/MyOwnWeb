@@ -89,6 +89,33 @@ body{
 }
 
 .boton_1, .boton_2,.joystick{user-select: none;}
+.redArrow{
+    right: 28%;
+}
+.redArrowText{
+    right: 40%;
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+.redArrowText,.redArrow{
+    animation: arrowMov 0.5s ease-in-out 15;
+    animation-delay: 5s;
+    opacity: 0;
+}
+@keyframes arrowMov {
+    0%{
+       bottom: 1%;
+       opacity: 1;
+    }
+    50%{
+        bottom: 3%;
+        opacity: 1;
+    }
+    100%{
+        bottom: 1%;
+        opacity: 1;
+    } 
+}
 
 @keyframes pressing_button {
     0%{

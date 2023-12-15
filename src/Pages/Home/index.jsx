@@ -15,7 +15,7 @@ import AboutMeEnglish from './Screens/MainTitle/English/aboutMyEnglish'
 import MySkillsEnglish from './Screens/MainTitle/English/MySkillsEnglish'
 import ContactEnglish from './Screens/MainTitle/English/contactEnglish'
 import MyExperienceEnglish from './Screens/MainTitle/English/MyExpEnglish'
-
+import Arrow from '../Home/imgs/redArrow.png'
 
 import React, { useContext } from 'react'
 import { ArcadeContext } from '../../Context'
@@ -57,7 +57,11 @@ function Home() {
           ></div>
 
         </div>
-        
+        <div>
+          <p className='absolute w-20 z-10 text-red-600 redArrowText' >Back to menu</p>
+          <img src={Arrow} className='absolute w-20 bottom-5 rotate-90 z-10 redArrow' alt="" />
+        </div>
+
         <img className='boton_1' src={red_button} alt="" />
         <img className='boton_2' onClick={()=> {
           if (context.languageSelected > 0){

@@ -31,7 +31,7 @@ function mySkills() {
     {icon:apple, name: "Manzana", desc: "Una simple manzana.", type: "Consumible"  },
     {icon:sword, name: "Espada", desc: "Una espada de madera.", type: "Arma"  },
     {icon:cheese, name: "Queso", desc: "Un rico queso, no sé como terminó en mi mochila.", type: "Consumible"  },
-    {icon:dice, name: "Dado", desc: "Un bonito dado para jugar el azar", type: "Objeto"  },
+    {icon:dice, name: "Dado", desc: "Un bonito dado", type: "Objeto"  },
     {icon:control, name: "???", desc: "No tengo idea que es esto.", type: "Raro"  },
 
 ]
